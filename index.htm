@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Form/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>COURSE APP</title>
+</head>
+
+<body>
+    <div class="container bg-warning rounded  shadow-lg p-4 m-3">
+        <h1 class="text-center text-dark fw-bolder">My Course List App</h1>
+        <div class="div"></div>
+        <form action="./" class="form" id="course-form">
+            <div class="form-group">
+                <label for="Course name" class="form-label"><span class="text-dark fw-bold fs-4">Course
+                        Name</span></label>
+                <input type="text" class="form-control course-name fs-5 fw-bolder"
+                    placeholder="Enter a Course name to add here...." />
+            </div>
+            <div class="form-group mt-2">
+                <label for="Course price" class="form-label"><span class="text-dark fw-bold fs-4">Course
+                        price</span></label>
+                <input type="text" class="form-control course-price fs-5 fw-bolder"
+                    placeholder="Enter a Course name to add here...." />
+            </div>
+            <div class="form-group mt-2">
+                <label for="Course year" class="form-label"><span class="text-dark fw-bold fs-4">Course
+                        Year</span></label>
+                <input type="text" class="form-control course-year fs-5 fw-bolder"
+                    placeholder="Enter a Course year here...." />
+            </div>
+            <button class=" btn btn-success mt-3 add-btn fw-bolder fs-5" type="submit">Add Course</button>
+        </form>
+    </div>
+    <div class="container bg-warning rounded shadow-lg p-4">
+        <table class="table table-striped fs-5 bg-white">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Year</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="course-list"></tbody>
+        </table>
+    </div>
+    <script src="./js/script.js">
+    </script>
+</body>
+
+</html>

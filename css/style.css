@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf0f3;
+    flex-direction: column;
+}
+
+.container {
+    height: auto;
+    background: #ffc107;
+    width: 400px;
+    padding: .20rem .35rem;
+    border-radius: .6rem;
+    box-shadow: .5rem .2rem 80px rgba(245, 245, 245, .19);
+}
